@@ -1,5 +1,7 @@
 # WebStudio
 
+[![Star this repo](https://img.shields.io/github/stars/ViktorPro1/WebStudio?style=social)](https://github.com/ViktorPro1/WebStudio/stargazers)
+
 Проєкт адаптивного вебсайту для навчання HTML та CSS.
 
 🔗 **[Переглянути сайт](https://viktorpro1.github.io/WebStudio/)**
