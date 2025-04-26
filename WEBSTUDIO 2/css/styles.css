@@ -1,0 +1,325 @@
+/* C5–C8: Шрифти та базові стилі */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #434455;
+    background-color: #ffffff;
+    margin: 0;
+}
+
+/* C9–C10: Заголовки */
+h1,
+h2,
+h3 {
+    margin: 0;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: #2e2f42;
+}
+
+/* A3: Групування стилів (наприклад, шапка) */
+/* C1: Flex-розмітка для хедера */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 120px;
+    background-color: #ffffff;
+}
+
+/* C1: Flex для навігації */
+.nav {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+/* C11: Стилі логотипа */
+.logo {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 117%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    text-decoration: none;
+}
+
+.logo-accent {
+    color: #2e2f42;
+}
+
+/* C2: Вирівнювання меню */
+.nav-list {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 76px;
+    font-size: 16px;
+}
+
+/* C3: Стилі посилань */
+.nav-link {
+    display: block;
+    padding: 24px 0;
+    text-decoration: none;
+    color: #2e2f42;
+    font-weight: 500;
+    transition: color 250ms ease-in-out;
+}
+
+/* C4: Ховер/фокус ефекти */
+.nav-link:hover,
+.nav-link:focus,
+.contact-link:hover,
+.contact-link:focus {
+    color: #404bbf;
+}
+
+/* C3: Активне посилання */
+.nav-link.current {
+    color: #404bbf;
+    position: relative;
+}
+
+.nav-link.current::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+}
+
+/* C3: Контакти */
+.contacts {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #434455;
+    transition: color 250ms ease-in-out;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+    color: #404bbf;
+}
+
+/* C12: Hero-секція */
+.hero {
+    background-color: #2e2f42;
+    padding: 188px 0;
+    text-align: center;
+    width: 1440px;
+}
+
+/* C12: Заголовок hero-секції */
+.hero-title {
+    max-width: 496px;
+    font-weight: 700;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 56px;
+    line-height: 1.07;
+    color: #fff;
+}
+
+/* C13: Кнопка */
+.hero-button {
+    margin-top: 48px;
+    background-color: #4d5ae5;
+    color: #ffffff;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 169px;
+    height: 56px;
+}
+
+/* C13: Ховер/фокус для кнопки */
+.hero-button:hover,
+.hero-button:focus {
+    background-color: #404bbf;
+}
+
+/* C12: Секція "Our Advantages" */
+.advantages-section {
+    padding: 120px 156px;
+}
+
+/* C12: Список переваг */
+.advantages-list {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* C12: Пункт списку */
+.advantages-item {
+    flex-basis: calc((100% - 72px) / 4);
+    /* якщо 4 елементи */
+}
+
+/* C12: Заголовок пункту */
+.advantages-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #2e2f42;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+/* C12: Текст пункту */
+.advantages-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #434455;
+    text-align: left;
+}
+
+/* C12: Секція "Our Team" */
+.team-section {
+    background-color: #f4f4fd;
+    padding: 120px 0;
+    text-align: center;
+}
+
+/* C12: Список команди */
+.team-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+    margin-top: 72px;
+}
+
+/* C12: Картка команди */
+.team-card {
+    background-color: #ffffff;
+    padding-bottom: 32px;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.08),
+        0px 1px 1px rgba(0, 0, 0, 0.16), 0px 1px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* C13: Секція "Our Portfolio" */
+.portfolio-section {
+    padding: 60px 20px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* C13: Заголовок портфоліо */
+.portfolio-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+/* C13: Список елементів портфоліо */
+.portfolio-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* C13: Елемент портфоліо */
+.portfolio-item {
+    border: 1px solid #eee;
+    padding-bottom: 20px;
+    background-color: #fff;
+    transition: box-shadow 0.3s ease;
+}
+
+/* C13: Елемент портфоліо на ховер */
+.portfolio-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* C13: Зображення елемента портфоліо */
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* C13: Назва елемента портфоліо */
+.portfolio-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 16px;
+}
+
+/* C13: Категорія елемента портфоліо */
+.portfolio-category {
+    font-size: 14px;
+    color: #777;
+    margin: 0 16px;
+}
+
+/* C12: Футер */
+.footer {
+    background-color: #2e2f42;
+    padding: 100px 0;
+    color: #f4f4fd;
+    text-align: left;
+    padding-left: 120px;
+}
+
+/* C12: Логотип футера */
+.footer-logo {
+    color: #4d5ae5;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* C12: Акцент у футері */
+.footer-logo-accent {
+    color: #f4f4fd;
+}
+
+/* C12: Текст у футері */
+.footer-text {
+    max-width: 264px;
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 1.5;
+}
