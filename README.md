@@ -1,4 +1,5 @@
 # WebStudio
+Створено за матеріалами компанії ТОВ"GoIT"
 
 [![Star this repo](https://img.shields.io/github/stars/ViktorPro1/WebStudio?style=social)](https://github.com/ViktorPro1/WebStudio/stargazers)
 
